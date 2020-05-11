@@ -31,8 +31,8 @@ describe('test weather forcast page', () => {
         let temps = Weather.tempsText;
         let lengthTemp = temps.length;
         let lowestTemp = temps[lengthTemp-1];
-       
-        assert.isAtLeast(currentTemp, lowestTemp, 'current temp is not less than timeline lowest temp');
+        
+        assert.isAtLeast(currentTemp, lowestTemp, 'current temp is less than timeline lowest temp');
       
     })
 
@@ -41,7 +41,7 @@ describe('test weather forcast page', () => {
         let temps = Weather.tempsText;
         let highestTemp = temps[0];
         
-        assert.isAtMost(currentTemp, highestTemp, 'current temp is not greater than timeline highest temp');
+        assert.isAtMost(currentTemp, highestTemp, 'current temp is greater than timeline highest temp');
 
     })
 
