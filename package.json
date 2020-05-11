@@ -1,0 +1,39 @@
+{
+  "name": "darkskyweather",
+  "version": "1.0.0",
+  "description": "Automated darksky.net webpage tests",
+  "main": "index.js",
+  "scripts": {
+    "test": "wdio wdio.conf.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kenxlaravel/darkskynet.git"
+  },
+  "keywords": [
+    "WebdriverIO",
+    "Automation"
+  ],
+  "author": "KenXu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kenxlaravel/darkskynet/issues"
+  },
+  "homepage": "https://github.com/kenxlaravel/darkskynet#readme",
+  "dependencies": {
+    "@babel/cli": "^7.8.4",
+    "@babel/core": "^7.9.6",
+    "@babel/preset-env": "^7.9.6",
+    "@babel/register": "^7.9.0",
+    "@wdio/cli": "^6.1.9",
+    "chai": "^4.2.0"
+  },
+  "devDependencies": {
+    "@wdio/local-runner": "^6.1.9",
+    "@wdio/mocha-framework": "^6.1.8",
+    "@wdio/spec-reporter": "^6.1.9",
+    "@wdio/sync": "^6.1.8",
+    "chromedriver": "^81.0.0",
+    "wdio-chromedriver-service": "^6.0.3"
+  }
+}
