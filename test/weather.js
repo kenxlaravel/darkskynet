@@ -5,11 +5,11 @@ var assert = chai.assert;
 
 describe('test weather forcast page', () => {
 
-    it('go to dark sky page', () => {
+    it('go to darksky weather forcast page', () => {
         App.openDarkSkyNet();
     });
 
-    it('input with zipcode 10001 to location', () => {
+    it('input zipcode 10001 to location field', () => {
         Weather.fillLocationInputBox('10001');
     });
 
@@ -41,7 +41,7 @@ describe('test weather forcast page', () => {
         let temps = Weather.tempsText;
         let highestTemp = temps[0];
         
-        assert.isBelow(currentTemp, highestTemp, 'current temp is not greater than timeline highest temp');
+        assert.isAtMost(currentTemp, highestTemp, 'current temp is not greater than timeline highest temp');
 
     })
 
