@@ -22,7 +22,7 @@ describe('test weather forcast page', () => {
         let hours = Weather.sortTimex();
       
         for(var i=1; i<hours.length-1; i++){
-             assert.equal(hours[i]-hours[i+1], 2, 'timeline ');
+             assert.equal(hours[i]-hours[i+1], 2, 'timeline is not increment by 2');
          }
     });
 
