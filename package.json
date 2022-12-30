@@ -30,7 +30,7 @@
   },
   "devDependencies": {
     "@wdio/local-runner": "^6.1.9",
-    "@wdio/mocha-framework": "^6.1.8",
+    "@wdio/mocha-framework": "^6.11.0",
     "@wdio/spec-reporter": "^6.1.9",
     "@wdio/sync": "^6.1.8",
     "chromedriver": "^81.0.0",
